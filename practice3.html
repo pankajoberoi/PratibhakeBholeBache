@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Personal Learning Portal - Registration</title>
+  </head>
+  <body>
+    <!-- Header Navigation -->
+    <header>
+      <nav>
+        <a href="#">Home</a> | <a href="#">Courses</a> |
+        <a href="#">Resources</a> |
+        <a href="#">Contact / Register</a>
+      </nav>
+    </header>
+
+    <!-- Registration Form -->
+    <main>
+      <h2>Student Registration Form</h2>
+      <form action="#">
+        <!-- Group 1 -->
+        <fieldset>
+          <legend>Personal Details</legend>
+
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" /><br /><br />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" /><br /><br />
+
+          <label for="phone">Phone:</label>
+          <input type="text" id="phone" name="phone" /><br /><br />
+
+          <!-- Gender -->
+          <label>Gender:</label><br />
+          <input type="radio" name="gender" value="male" /> Male<br />
+          <input type="radio" name="gender" value="female" /> Female<br />
+          <input type="radio" name="gender" value="other" /> Other<br />
+        </fieldset>
+
+        <!-- Group 2 -->
+        <fieldset>
+          <legend>Course Preferences</legend>
+
+          <!-- Checkboxes -->
+          <label>Technologies Known:</label><br />
+          <input type="checkbox" name="tech" value="html" /> HTML
+          <input type="checkbox" name="tech" value="css" /> CSS
+          <input type="checkbox" name="tech" value="python" />
+          Python<br /><br />
+
+          <!-- Select -->
+          <label for="course">Preferred Course:</label>
+          <select id="course" name="course">
+            <option value="html">HTML & CSS</option>
+            <option value="js">JavaScript</option>
+            <option value="python">Python</option></select
+          ><br /><br />
+
+          <!-- Textarea -->
+          <label for="intro">Short Introduction:</label><br />
+          <textarea id="intro" name="intro" rows="4" cols="40"></textarea
+          ><br /><br />
+        </fieldset>
+
+        <!-- Buttons -->
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </form>
+
+      <!-- Brochure Download Link -->
+      <p>
+        <a href="brochure.pdf" download>Download Brochure</a>
+      </p>
+
+      <!-- Google Map -->
+      <h3>Our Location</h3>
+      <iframe
+        width="600"
+        height="400"
+        src="https://www.google.com/maps/embed?pb=!1m18!..."
+        allowfullscreen
+      >
+      </iframe>
+    </main>
+
+    <!-- Footer with External Links -->
+    <footer>
+      <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> |
+      <a href="https://github.com" target="_blank">GitHub</a>
+    </footer>
+  </body>
+</html>
