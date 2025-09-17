@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .screen {
+        height: 100vh;
+        background-color: yellow;
+        display: flex;
+        /* flex-direction: row; */
+        flex-wrap: wrap;
+        justify-content: start; /*main axis*/
+        align-items: start;
+        align-content: start;
+      }
+      .box {
+        height: 150px;
+        width: 150px;
+        border: 2px solid black;
+        font-size: 20px;
+        margin: 3px;
+      }
+      #Box1 {
+        background-color: red;
+      }
+      #Box2 {
+        background-color: aqua;
+      }
+      #Box3 {
+        background-color: orange;
+      }
+      #Box4 {
+        background-color: palevioletred;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="screen">
+      <div class="box" id="Box1">Box1</div>
+      <div class="box" id="Box2">Box2</div>
+      <div class="box" id="Box3">Box3</div>
+      <div class="box" id="Box4">Box4</div>
+    </div>
+  </body>
+</html>
