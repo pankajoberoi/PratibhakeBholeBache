@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_right_alt"
+    />
+    <style>
+      .dabba {
+        display: flex;
+        border: 2px solid black;
+        background-color: aqua;
+        height: 90vh;
+        width: 1200px;
+      }
+
+      .box {
+        height: 300px;
+        width: 300px;
+        border: 2px solid black;
+        margin: 5px;
+        background-color: red;
+      }
+
+      #box1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .material-symbols-outlined {
+        font-size: 150px;
+        display: none;
+      }
+      p {
+        display: none;
+      }
+
+      @media (max-width: 715px) {
+        #box1 {
+          align-self: flex-end;
+        }
+        .material-symbols-outlined {
+          display: block;
+        }
+        p {
+          display: block;
+        }
+      }
+
+      @media (max-width: 1215px) {
+        .dabba {
+          flex-direction: column;
+        }
+        .box {
+          background-color: green;
+          border-radius: 100%;
+        }
+      }
+
+      @media (max-height: 1401px) {
+        .dabba {
+          flex-wrap: wrap;
+          align-content: start;
+        }
+      }
+
+      /* @media (max-width: 1592px) {
+        .dabba {
+          background-color: red;
+          color: white;
+        }
+      } */
+
+      /* @media (min-width: 1750px) {
+        .dabba {
+          width: 600px;
+          border-radius: 10px;
+        }
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="dabba">
+      <div class="box" id="box1">
+        <span class="material-symbols-outlined"> arrow_right_alt </span>
+        <p>BAS KAR BHAI</p>
+      </div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+    </div>
+  </body>
+</html>
