@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .navbar {
+        background-color: black;
+        display: flex;
+        height: 55px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 24px;
+      }
+      .navlink {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: orangered;
+        font-weight: 700;
+      }
+      .inner-navbar {
+        display: flex;
+        column-gap: 20px;
+      }
+      .inner-navlink {
+        text-decoration: none;
+        color: white;
+        font-size: 1.3rem;
+      }
+      .btn {
+        text-decoration: none;
+        color: white;
+        background-color: orangered;
+        padding: 4px 16px;
+        border-radius: 5px;
+        font-weight: 700;
+      }
+      @media (max-width: 570px) {
+        .navbar {
+          flex-direction: column;
+          height: auto;
+          text-align: center;
+        }
+        .navlink {
+          border-bottom: 1px solid grey;
+        }
+        .inner-navbar {
+          flex-direction: column;
+          text-align: center;
+          width: 100%;
+        }
+        .inner-navlink {
+          border-bottom: 1px solid grey;
+          width: 100%;
+          padding: 8px 0px;
+        }
+        .btn {
+          margin-top: 3px;
+          width: 50%;
+          margin-bottom: 2px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#" class="navlink">PRATIBHA</a>
+      <div class="inner-navbar">
+        <a href="#" class="inner-navlink">Home</a>
+        <a href="#" class="inner-navlink">About</a>
+        <a href="#" class="inner-navlink">Team</a>
+        <a href="#" class="inner-navlink">Contact</a>
+      </div>
+      <a href="#" class="btn">LOGIN</a>
+    </div>
+  </body>
+</html>
