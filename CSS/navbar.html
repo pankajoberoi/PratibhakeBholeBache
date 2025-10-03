@@ -18,6 +18,8 @@
         align-items: center;
         justify-content: space-between;
         padding: 0px 24px;
+        position: sticky;
+        top: 0px;
       }
       .navlink {
         text-decoration: none;
@@ -42,6 +44,20 @@
         border-radius: 5px;
         font-weight: 700;
       }
+
+      #home {
+        height: 800px;
+        background-color: red;
+      }
+      #about {
+        height: 800px;
+        background-color: yellow;
+      }
+      #team {
+        height: 800px;
+        background-color: blue;
+      }
+
       @media (max-width: 570px) {
         .navbar {
           flex-direction: column;
@@ -70,15 +86,23 @@
     </style>
   </head>
   <body>
+    <!-- navbar -->
     <div class="navbar">
       <a href="#" class="navlink">PRATIBHA</a>
       <div class="inner-navbar">
-        <a href="#" class="inner-navlink">Home</a>
-        <a href="#" class="inner-navlink">About</a>
-        <a href="#" class="inner-navlink">Team</a>
+        <a href="#home" class="inner-navlink">Home</a>
+        <a href="#about" class="inner-navlink">About</a>
+        <a href="#team" class="inner-navlink">Team</a>
         <a href="#" class="inner-navlink">Contact</a>
       </div>
       <a href="#" class="btn">LOGIN</a>
     </div>
+
+    <!-- Home -->
+    <div id="home">Home Section</div>
+
+    <div id="about">About Section</div>
+
+    <div id="team">Team Section</div>
   </body>
 </html>
