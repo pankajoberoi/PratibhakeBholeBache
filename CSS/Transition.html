@@ -28,7 +28,7 @@
         background-color: green; */
       /* } */
 
-      /* .parent:hover .child {
+      .parent:hover .child {
         width: 100vw;
       }
 
@@ -57,7 +57,7 @@
       .child-5 {
         background-color: deeppink;
         transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-      } */
+      }
 
       .child {
         width: 100px;
@@ -66,7 +66,7 @@
         width: 0px;
         background-color: aqua;
         /* transition: property : duration : timing fn :delay; this is short hand notation*/
-        transition: width 0.5s ease-out 1s;
+        transition: width 2s cubic-bezier(0.19, 1, 0.22, 1);
       }
       .dabba:hover {
         width: 100px;
@@ -85,13 +85,13 @@
   </head>
   <body>
     <!-- <div class="box"></div> -->
-    <!-- <div class="parent"> -->
-    <!-- <div class="child child-1">Linear</div>
+    <div class="parent">
+      <div class="child child-1">Linear</div>
       <div class="child child-2">Ease in</div>
       <div class="child child-3">Ease out</div>
-      <div class="child child-4">Ease in and out</div> -->
-    <!-- <div class="child child-5">Cubic</div> -->
-    <!-- </div> -->
+      <div class="child child-4">Ease in and out</div>
+      <div class="child child-5">Cubic</div>
+    </div>
 
     <div class="dabba">
       <div class="child">Pankaj Oberoi</div>
