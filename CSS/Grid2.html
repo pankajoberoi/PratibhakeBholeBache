@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        border: 3px solid black;
+        height: 90vh;
+        display: grid;
+        grid-template-areas:
+          "nav nav nav"
+          "side main1 adv"
+          "side main2 adv"
+          "foot foot  foot";
+      }
+
+      .item {
+        text-align: center;
+        font-size: 80px;
+      }
+
+      .item1 {
+        grid-area: nav;
+        background-color: brown;
+      }
+      .item2 {
+        grid-area: side;
+        background-color: red;
+      }
+      .item3 {
+        grid-area: main1;
+        background-color: orange;
+      }
+      .item4 {
+        grid-area: main2;
+        background-color: lightblue;
+      }
+      .item5 {
+        grid-area: adv;
+        background-color: blue;
+      }
+      .item6 {
+        grid-area: foot;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item1">Navbar</div>
+      <div class="item item2">Side Menu</div>
+      <div class="item item3">Main content</div>
+      <div class="item item4">Man content 2</div>
+      <div class="item item5">Advertisement</div>
+      <div class="item item6">Footer</div>
+    </div>
+  </body>
+</html>
