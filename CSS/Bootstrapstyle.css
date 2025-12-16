@@ -1,0 +1,9 @@
+.box{
+    border: 1px solid black;
+    background-color: aquamarine;
+    height: 50px;
+}
+
+nav{
+    position: fixed;
+}
