@@ -160,17 +160,42 @@ console.log("Hello ji");
 //   break;
 // } while (study == "yes");
 
-let kamai = 0;
-let customer;
-console.log("subah ho gyi mammu dukan khul gyi");
-do {
-  customer = prompt("Kya customer ayya");
-  if (customer == "y") {
-    let bill = Number(prompt("kitna bill bna"));
-    kamai += bill;
-  } else {
-    kamai += 50;
-  }
-} while (customer == "y");
+// let kamai = 0;
+// let customer;
+// console.log("subah ho gyi mammu dukan khul gyi");
+// do {
+//   customer = prompt("Kya customer ayya");
+//   if (customer == "y") {
+//     let bill = Number(prompt("kitna bill bna"));
+//     kamai += bill;
+//   } else {
+//     kamai += 50;
+//   }
+// } while (customer == "y");
 
-console.log("din ki kamai " + kamai);
+// console.log("din ki kamai " + kamai);
+
+// let user1 = prompt("Guess a number btw 1 to 100");
+
+// let Guess_status = "Unmatched";
+// let attempt = 0;
+
+// do {
+//   let user2 = prompt("User 2 guess the number");
+//   attempt++;
+
+//   if (user2 > user1) {
+//     alert("Guess a smaller number");
+//   } else if (user2 < user1) {
+//     alert("Guess a bigger number");
+//   } else {
+//     alert("Hurrrraaaayyyf matched!!");
+//     Guess_status = "matched";
+//   }
+// } while (Guess_status != "matched");
+
+// console.log("Total attempts are " + attempt);
+
+// let user3 = Math.floor(Math.random() * 100);
+
+// console.log(user3);
