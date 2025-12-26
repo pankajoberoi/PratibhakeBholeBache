@@ -71,15 +71,15 @@ console.log("hello");
 
 // console.log(sentence.length);
 
-let str1 = "I am str1";
+// let str1 = "I am str1";
 
-let str2 = "I am str2";
+// let str2 = "I am str2";
 
-console.log(str1);
+// console.log(str1);
 
-console.log(str1.concat(str2));
+// console.log(str1.concat(str2));
 
-console.log(str1);
+// console.log(str1);
 
 // let c = str1 + " " + str2;
 
@@ -87,3 +87,68 @@ console.log(str1);
 
 // console.log((str1 += " "));
 // console.log((str1 += str2));
+
+// console.log("Bherry" < "Cherry"); //true
+
+// console.log("Berry" < "Bingo"); //true
+
+// console.log("berry" < "Berry"); //False
+
+// capital baad mai or lower case hai wo pehle
+
+// console.log("$" < "&");
+
+// let quote1 = "Hello ji good morning";
+
+// let quote2 = "Hello ji good morning!";
+
+// console.log(quote1.length > quote2.length);
+
+// let str1 = `You are learning strings today
+// and we are enroll in mern stack`;
+
+// console.log(str1);
+
+// let student1 = "Vishal";
+// let student2 = "Shruti";
+
+// let list = `List of my students include ${student1} and ${student2}`;
+
+// console.log(list);
+
+// function greet() {
+//   return "Welcome";
+// }
+
+// let currentYear = 2025;
+
+// let birthYear = 2010;
+
+// let myIntro = `My name is Pankaj and I'll have ${
+//   currentYear - birthYear > 20 ? "Wine" : "Water"
+// }`;
+
+// let name = `Pankaj ${greet()}`;
+
+// console.log(myIntro);
+
+// let YourName = prompt("Enter your name").toUpperCase();
+
+// console.log(YourName);
+
+// console.log(YourName.toUpperCase());
+// console.log(YourName.toLowerCase());
+
+// let sentence = "I am an Avenger called Ironman";
+
+// console.log(sentence.includes("Avenger"));
+
+// console.log(sentence.indexOf("z"));
+
+// console.log(sentence.slice(-4));
+
+// console.log(sentence.substring(15, 4));
+
+let Name = "Bantu";
+start = 0;
+end = Name.length - 1;
