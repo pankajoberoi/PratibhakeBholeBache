@@ -149,6 +149,51 @@ console.log("hello");
 
 // console.log(sentence.substring(15, 4));
 
-let Name = "Bantu";
-start = 0;
-end = Name.length - 1;
+// let Name = "Bantu";
+// start = 0;
+// end = Name.length - 1;
+
+// Hold
+// let str = "Pankaj";
+
+// let left = 0;
+// let right = str.length - 1;
+
+// let reverse = "";
+
+// while (left <= right) {
+//   if (left === right) {
+//     reverse = reverse + str.charAt(left);
+//   } else {
+//     reverse = reverse + str.charAt(right) + str.charAt(left);
+//   }
+
+//   left++;
+//   right--;
+// }
+// console.log(reverse);
+
+// let str = "I am Happy";
+
+// console.log(str.replaceAll(" ", "_"));
+
+let str2 = "aabbbcccc";
+
+for (let i = 0; i < str2.length; i++) {
+  let ch = str2.charAt(i); // a
+  let frequency = 0;
+
+  for (let j = 0; j < str2.length; j++) {
+    if (str2.charAt(j) == ch) {
+      frequency++;
+    }
+  }
+
+  if (str2.indexOf(ch) === i) {
+    console.log(`${ch} -> ${frequency}`);
+  }
+}
+
+// Password -> special , Upper case , number
+
+ch >= A && ch <= Z;
