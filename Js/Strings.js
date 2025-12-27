@@ -175,25 +175,47 @@ console.log("hello");
 
 // let str = "I am Happy";
 
-// console.log(str.replaceAll(" ", "_"));
+// // console.log(str.replaceAll(" ", "_"));
 
-let str2 = "aabbbcccc";
+// let str2 = "aabbbcccc";
 
-for (let i = 0; i < str2.length; i++) {
-  let ch = str2.charAt(i); // a
-  let frequency = 0;
+// for (let i = 0; i < str2.length; i++) {
+//   let ch = str2.charAt(i); // a
+//   let frequency = 0;
 
-  for (let j = 0; j < str2.length; j++) {
-    if (str2.charAt(j) == ch) {
-      frequency++;
-    }
-  }
+//   for (let j = 0; j < str2.length; j++) {
+//     if (str2.charAt(j) == ch) {
+//       frequency++;
+//     }
+//   }
 
-  if (str2.indexOf(ch) === i) {
-    console.log(`${ch} -> ${frequency}`);
-  }
-}
+//   if (str2.indexOf(ch) === i) {
+//     console.log(`${ch} -> ${frequency}`);
+//   }
+// }
 
 // Password -> special , Upper case , number
 
-ch >= A && ch <= Z;
+// ch >= A && ch <= Z;
+// ch >= a && ch <=z
+
+// seocnd option using mail and date of birth
+
+let Sample = "Shruti madam pratibhaaaa zindabaad";
+let count = 0;
+let longest_length = 0;
+
+for (let i = 0; i < Sample.length; i++) {
+  count++;
+  if (Sample.charAt(i) == " ") {
+    if (count > longest_length) {
+      longest_length = count - 1;
+    }
+    count = 0;
+  }
+}
+if (count > longest_length) {
+  longest_length = count;
+}
+
+console.log("longest lenght of a word in this sentence is " + longest_length);
