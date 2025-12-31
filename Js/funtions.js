@@ -106,14 +106,13 @@
 // 1 to 50
 
 // function ToCheckPrime(n) {
-//   let flag = true;
 //   for (let i = 2; i < n; i++) {
 //     if (n % i == 0) {
-//       flag = false;
+//       return false;
 //     }
 //   }
 
-//   return flag;
+//   return true;
 // }
 
 // let answer = ToCheckPrime(6);
@@ -136,34 +135,105 @@
 
 // Armstrong number
 
-function Count_Digits(num) {
-  let count = 0;
-  while (num != 0) {
-    num = Math.floor(num / 10);
-    count++;
-  }
-  return count;
+// function Count_Digits(num) {
+//   let count = 0;
+//   while (num != 0) {
+//     num = Math.floor(num / 10);
+//     count++;
+//   }
+//   return count;
+// }
+
+// function armstrong(num, power) {
+//   let sum = 0;
+//   while (num != 0) {
+//     let rem = num % 10;
+//     sum = sum + rem ** power;
+//     console.log(sum);
+//     num = Math.floor(num / 10);
+//   }
+//   return sum;
+// }
+
+// let num = 153;
+
+// let power = Count_Digits(num);
+
+// let temp = armstrong(num, power);
+
+// if (temp == num) {
+//   console.log("Its armstrong");
+// } else {
+//   console.log("Chal bhaag yahan see");
+// }
+
+// Arrow function is a shorter form to write a function
+
+// let Bonused_salary = function (salary) {
+//   return salary + 2000;
+// };
+
+// console.log(Bonused_salary(10000));
+
+// let Bonused_salary = (salary) => salary + 2000;
+
+// console.log(Bonused_salary(20000));
+
+// 2 option
+
+// const RetirementAge = (birthyear) => {
+//   const age = 2025 - birthyear;
+//   const retire = 50 - age;
+
+//   return retire;
+// };
+
+// console.log(RetirementAge(2000));
+
+// let birthYear = 2000;
+// let age = (birthYear) => 2025 - birthYear;
+
+// console.log(`I am Pankaj and my age ${age(birthYear)}`);
+
+// let Name = "Pankaj";
+// let salary = 100000;
+
+// let info = (Name, salary) => {
+//   return `My name is ${Name} and my Salary is ${salary}`;
+//   console.log("hello ji");
+// };
+
+// console.log(info(Name, salary));
+
+// const cutPieces = function (fruit) {
+//   return fruit * 4;
+// };
+
+// function Juicer(apples, oranges) {
+//   let applePieces = cutPieces(apples);
+//   let orangePieces = cutPieces(oranges);
+
+//   var juice = `Juice with ${applePieces} apples pieces and ${orangePieces} oranges pieces `;
+
+//   return juice;
+// }
+
+// let glass = Juicer(9, 4); //agruments
+
+// console.log(glass);
+
+function add(a, b) {
+  return a + b;
 }
 
-function armstrong(num, power) {
-  let sum = 0;
-  while (num != 0) {
-    let rem = num % 10;
-    sum = sum + rem ** power;
-    console.log(sum);
-    num = Math.floor(num / 10);
-  }
-  return sum;
+function subtract(a, b) {
+  return a - b;
 }
 
-let num = 153;
-
-let power = Count_Digits(num);
-
-let temp = armstrong(num, power);
-
-if (temp == num) {
-  console.log("Its armstrong");
-} else {
-  console.log("Chal bhaag yahan see");
+function calculator(num1, num2, callback) {
+  return callback(num1, num2);
 }
+
+let ans = calculator(10, 5, add());
+
+console.log(ans);
