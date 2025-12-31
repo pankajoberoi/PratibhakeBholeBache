@@ -222,18 +222,94 @@
 
 // console.log(glass);
 
-function add(a, b) {
-  return a + b;
+// function add(a, b) {
+//   return a + b;
+// }
+
+// function subtract(a, b) {
+//   return a - b;
+// }
+
+// //Higher order function
+// function calculator(num1, num2, callback) {
+//   return callback(num1, num2);
+// }
+
+// let ans = calculator(10, 5, add);
+
+// console.log(ans);
+
+// function paymentSuccess(msg) {
+//   console.log(msg);
+// }
+
+// function paymentFailure(msg) {
+//   console.log(msg);
+// }
+
+// function PaytmKaro(amount, onSuccess, onfailure) {
+//   if (amount > 0) {
+//     onSuccess("Payment of Rs " + amount + " is successfull");
+//   } else {
+//     onfailure("Payment failed");
+//   }
+// }
+
+// PaytmKaro(500, paymentSuccess, paymentFailure);
+
+// let greet = function () {
+//   return "Welcome";
+// };
+
+// let naam = "Pankaj";
+// let birthYear = 2000;
+
+// let greet2 = (naam, birthYear) => {
+//   let age = 2025 - birthYear;
+//   return `My name is ${naam} and my age is ${age}`;
+// };
+
+// console.log(greet2(naam, birthYear));
+
+// function bookCab(distance, callback) {
+//   console.log("Cab arrived total distance you will cover is !! " + distance);
+//   let totalFare = distance * 10;
+
+//   callback(totalFare);
+// }
+
+// bookCab(25, (fare) => {
+//   console.log("Total bill is " + fare);
+// });
+
+// Scope Chaining /global / block or functional scope
+
+// let canteen = "Coffee cafe";
+
+// function faculty() {
+//   let attendance = true;
+
+//   function student() {
+//     let classesBunk = true;
+//     console.log("can i access attendance : " + attendance);
+//   }
+
+//   student();
+//   console.log(classesBunk);
+// }
+
+// faculty();
+
+function createBankAccount() {
+  let balance = 100;
+
+  return function (amount) {
+    balance = balance + amount;
+    return `Current balance: Rs ${balance}`;
+  };
 }
 
-function subtract(a, b) {
-  return a - b;
-}
-
-function calculator(num1, num2, callback) {
-  return callback(num1, num2);
-}
-
-let ans = calculator(10, 5, add());
-
-console.log(ans);
+let myAccount = createBankAccount();
+console.log(myAccount);
+console.log(myAccount(1000));
+console.log(myAccount(1000));
