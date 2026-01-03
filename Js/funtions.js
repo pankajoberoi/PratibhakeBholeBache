@@ -300,6 +300,7 @@
 
 // faculty();
 
+//closures
 function createBankAccount() {
   let balance = 100;
 
