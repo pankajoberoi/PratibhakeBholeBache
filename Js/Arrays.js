@@ -276,13 +276,36 @@ console.log("Good Morning mitron!!!");
 
 // console.log(output);
 
-let arr = [10, 50, 15, 60, 5];
+// let arr = [10, 50, 15, 60, 5];
 
-let ans = arr.reduce((max, cuurent) => {
-  if (cuurent > max) {
-    max = cuurent;
-  }
-  return max;
-}, arr[0]);
+// let ans = arr.reduce((max, cuurent) => {
+//   if (cuurent > max) {
+//     max = cuurent;
+//   }
+//   return max;
+// }, arr[0]);
 
-console.log(ans);
+// console.log(ans);
+
+// const transform = (arr, fn) => {
+//   return arr.map(fn);
+// };
+
+// const double = (num) => num * 2;
+// const square = (num) => num ** 2;
+
+// const result = transform([1, 2, 3, 4], (n) => {
+//   return square(double(n));
+// });
+
+// console.log(result);
+
+// let arr = [2, 5, 1, 8, 4];
+
+let average =
+  arr.reduce((acc, curr) => {
+    acc = acc + curr;
+    return acc;
+  }, 0) / arr.length;
+
+// console.log(average);
