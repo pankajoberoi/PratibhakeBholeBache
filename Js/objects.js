@@ -172,22 +172,39 @@ console.log("hello ji");
 //   console.log(product[i]);
 // }
 
-let product = {
-  Sweet: "Jalebi",
-  price: 50,
-  stock: "1KG",
-};
+// let product = {
+//   Sweet: "Jalebi",
+//   price: 50,
+//   stock: "1KG",
+// };
 
-console.log(product);
+// console.log(product);
 
-let keys = Object.keys(product);
-console.log(keys);
+// let keys = Object.keys(product);
+// console.log(keys);
 
-let values = Object.values(product);
-console.log(values);
+// let values = Object.values(product);
+// console.log(values);
 
-for (let [key, value] of Object.entries(product)) {
-  console.log(key, value);
-}
+// for (let [key, value] of Object.entries(product)) {
+//   console.log(key, value);
+// }
 
-console.log(Object.entries(product));
+// console.log(Object.entries(product));
+
+// const orders = [
+//   { orderId: 1, customer: "Amit", items: ["Burger", "Pizza"], total: 450, delivered: true },
+//   { orderId: 2, customer: "Neha", items: ["Pasta"], total: 250, delivered: false },
+//   { orderId: 3, customer: "Ravi", items: ["Burger", "Fries"], total: 300, delivered: true },
+//   { orderId: 4, customer: "Pooja", items: ["Pizza"], total: 350, delivered: true }
+// ];
+
+// Q => return => totalOrders => 4
+
+// Q => return => deliveredOrders => 3
+
+// Q => return => PendingOrder => 1
+
+// Q => return => TotalRevenue => 1150 (delivered => true)
+
+// Q => TopCustomer => Amit
