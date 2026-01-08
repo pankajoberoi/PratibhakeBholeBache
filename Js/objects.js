@@ -55,25 +55,26 @@ console.log("hello ji");
 // let arr = [1, 2, 3, 4];
 // console.log(arr);
 
-const profile = {
-  firstName: "Pankaj",
-  lastName: "Oberoi",
-  age: 25,
-  jobStatus: true,
-  address: ["hinjewade", "Pune"],
-};
+// const profile = {
+//   firstName: "Pankaj",
+//   lastName: "Oberoi",
+//   age: 25,
+//   jobStatus: true,
+//   address: ["hinjewade", "Pune"],
+//   salary: 95000,
+// };
 
 // Dot vs bracket(expression)
 
-console.log(profile.firstName);
+// console.log(profile.firstName);
 
-console.log(profile["address"]);
+// console.log(profile["address"]);
 
-let nameKey = "Name";
+// let nameKey = "Name";
 
-console.log(profile["first" + nameKey]);
+// console.log(profile["first" + nameKey]);
 
-console.log(profile["last" + nameKey]);
+// console.log(profile["last" + nameKey]);
 
 // let manager = prompt("Enter the value you want to access from my profile");
 
@@ -82,3 +83,111 @@ console.log(profile["last" + nameKey]);
 // console.log(profile["address"][1]);
 
 // json = [{},{},{}]
+
+// profile.gmail = "abc@gmail.com";
+
+// console.log(profile);
+
+// profile["insta"] = "pankajpberoi112";
+
+// console.log(profile);
+
+// profile.firstName = "Khushi";
+
+// profile.jobStatus = false;
+
+// console.log(profile);
+
+// const profile = {
+//   firstName: "Pankaj",
+//   lastName: "Oberoi",
+//   age: 25,
+//   jobStatus: true,
+//   address: ["hinjewade", "Pune"],
+//   salary: 95000,
+// };
+
+// let key = prompt("Enter the key you want to access");
+
+// if (profile[key] > 90000) {
+//   profile.jobStatus = false;
+//   console.log("1 month notice period");
+//   console.log(profile);
+// }
+
+// let student = {
+//   Name: "Chinki",
+//   rollno: 101,
+//   marks: {
+//     math: 10,
+//     science: 20,
+//     english: 30,
+//   },
+// };
+
+// let total = student.marks.math + student.marks.science + student.marks.english;
+// let percentage = (total / 300) * 100;
+
+// if (percentage > 40) {
+//   console.log(
+//     `Student ${student.Name} with roll no ${student.rollno} have ${percentage}% number`
+//   );
+// } else {
+//   console.log(`${student.Name} is failed`);
+// }
+
+// let haldiram = [
+//   {
+//     Sweet: "Jalebi",
+//     price: 50,
+//     stock: "1KG",
+//   },
+//   {
+//     Sweet: "Gulab jMaun",
+//     price: 510,
+//     stock: "2KG",
+//   },
+//   {
+//     Sweet: "Halwa",
+//     price: 500,
+//     stock: "2KG",
+//   },
+// ];
+
+// let output = haldiram.map((i) => {
+//   return i;
+// });
+
+// console.log(output);
+
+// let product = {
+//   Sweet: "Jalebi",
+//   price: 50,
+//   stock: "1KG",
+// };
+
+// console.log(product);
+
+// for (let i in product) {
+//   console.log(product[i]);
+// }
+
+let product = {
+  Sweet: "Jalebi",
+  price: 50,
+  stock: "1KG",
+};
+
+console.log(product);
+
+let keys = Object.keys(product);
+console.log(keys);
+
+let values = Object.values(product);
+console.log(values);
+
+for (let [key, value] of Object.entries(product)) {
+  console.log(key, value);
+}
+
+console.log(Object.entries(product));
