@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .entered {
+        background-color: green;
+      }
+      .exit {
+        background-color: red;
+      }
+
+      div {
+        height: 300px;
+        width: 300px;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Learning events!!</h1>
+
+    <!-- <button
+      onclick="alert('First event Triggered!!'); console.log('Event Triggered');"
+    >
+      Click me
+    </button>
+
+    <button onclick="this.innerHTML = Date()">The time is?</button> -->
+
+    <!-- <button onclick="displayGreet()">Greet Me</button> -->
+
+    <!-- <button id="SampleBtn">Click me</button> -->
+
+    <!-- Name : <input type="text" id="name" />
+    <p id="Data"></p> -->
+
+    <div class="parkingArea">Parking Area....</div>
+
+    <script>
+      //   let button = document.getElementById("SampleBtn");
+
+      //   button.ondblclick = function () {
+      //     alert("Good morning cutieee!!@!");
+      //   };
+
+      //   button.ondblclick = function () {
+      //     console.log("i am second task");
+      //   };
+
+      //   let inputTag = document.getElementById("name");
+      //   let para = document.getElementById("Data");
+
+      //   inputTag.onchange = () => {
+      //     para.innerText = inputTag.value;
+      //   };
+
+      let area = document.querySelector(".parkingArea");
+
+      area.onmouseover = () => {
+        area.classList.remove("exit");
+        area.classList.add("entered");
+      };
+
+      area.onmouseout = () => {
+        area.classList.remove("entered");
+        area.classList.add("exit");
+      };
+    </script>
+  </body>
+</html>

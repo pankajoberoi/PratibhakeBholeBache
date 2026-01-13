@@ -98,6 +98,4 @@
 //   display.append(element);
 // }
 
-// attributes;
 // classlist;
-//delete
