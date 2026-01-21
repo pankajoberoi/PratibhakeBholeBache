@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -17,9 +17,24 @@
         left: 5px;
       } */
 
-      .container {
+      /* .container {
         border: 2px solid black;
         height: 300px;
+      } */
+
+      .parent {
+        height: 300px;
+        width: 300px;
+        border: 3px solid green;
+      }
+
+      .box {
+        height: 50px;
+        width: 50px;
+        background-color: tomato;
+        position: relative;
+        top: 100px;
+        left: 100px;
       }
     </style>
   </head>
@@ -30,6 +45,10 @@
 
     <!-- <button id="btn">add Box</button>
     <div class="container"></div> -->
+
+    <div class="parent">
+      <div class="box"></div>
+    </div>
 
     <script src="event3.js"></script>
   </body>

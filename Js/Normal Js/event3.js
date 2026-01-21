@@ -32,3 +32,37 @@
 //     alert("custom short cut");
 //   }
 // });
+
+// let Box = document.querySelector(".box");
+
+// let topPos = 100;
+// let leftPos = 100;
+
+// document.addEventListener("keydown", (e) => {
+//   let step = 10;
+//   if (topPos >= 0 && topPos <= 250) {
+//     if (e.key === "ArrowDown") {
+//       if (topPos == 250) {
+//         topPos = 250;
+//       } else {
+//         topPos += step;
+//       }
+//     } else if (e.key === "ArrowUp") {
+//       if (topPos == 0) {
+//         topPos = 0;
+//       } else {
+//         topPos -= step;
+//       }
+//     }
+//   }
+//   if (leftPos >= 0 && leftPos < 250) {
+//     if (e.key === "ArrowRight") {
+//       leftPos += step;
+//     } else if (e.key === "ArrowLeft") {
+//       leftPos -= step;
+//     }
+//   }
+
+//   Box.style.top = topPos + "px";
+//   Box.style.left = leftPos + "px";
+// });
