@@ -44,11 +44,11 @@ body{
     border-radius: 4px;
     cursor: pointer;
 }
-.btn:hover:not([disabled]){
+/* .btn:hover:not([disabled]){
     background: #222;
     color: white;
     transition: all 0.5s;
-}
+} */
 .btn:disabled{
     cursor: no-drop;
 }
@@ -62,13 +62,12 @@ body{
     margin: 20px auto ;
     border-radius: 4px;
     cursor: pointer;
-    display: block;
     display: none;
 }
 
 .correct{
-    background:#9aeabc;
+    background:green;
 }
 .incorrect{
-    background: #ff9393;
+    background: red;
 }
