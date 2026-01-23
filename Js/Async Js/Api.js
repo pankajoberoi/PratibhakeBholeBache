@@ -40,11 +40,7 @@ async function getSpecificData(pokemonName) {
 
   let data = await fetch(URL);
 
-  console.log(data);
-
   let output = await data.json();
-
-  console.log(output);
 
   let heading = document.createElement("h3");
   heading.innerHTML = pokemonName;
