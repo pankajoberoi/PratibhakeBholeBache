@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+#image{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+
+}
+.box{
+    display: inline-block;
+    padding-left: 45px;
+    border: 2px solid black;
+    background-color: pink;
+    width: 300px;
+}
