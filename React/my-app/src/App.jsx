@@ -3,8 +3,6 @@ import Sample from "./components/Sample"
 // import Intro from "./components/Intro"
 
 
-
-
 function App() {
 
 
@@ -20,7 +18,6 @@ function App() {
 
   ]
 
-  
   return (
     <div>
         {
