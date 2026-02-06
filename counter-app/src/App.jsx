@@ -1,4 +1,5 @@
 import Counter from "./Components/Counter"
+import NameDemo from "./Components/NameDemo"
 import PrintForm from "./Components/PrintForm"
 import Theme from "./Components/Theme"
 
@@ -21,9 +22,11 @@ function App() {
 
       {/* <PrintForm/> */}
 
-      <Theme/>
+      {/* <Theme/> */}
 
+      {/* <Counter/> */}
 
+      {/* <NameDemo/> */}
 
 
    </>
