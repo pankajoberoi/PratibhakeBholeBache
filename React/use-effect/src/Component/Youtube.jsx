@@ -15,6 +15,10 @@ const Youtube = () => {
         connection.connect()  
     },[watch])
 
+
+    
+
+
     function handleClick(){
         setWatch(!watch)
     }
@@ -23,7 +27,7 @@ const Youtube = () => {
     <div>
 
         Category <input type="text" placeholder='Enter category' onChange={(e)=> setCategory(e.target.value)}/>
-        <button onClick={handleClick}>Watch Vedios</button>
+        <button onClick={handleClick}>{watch?"Back to Home Page":"Go To vedios"}</button>
 
         {(watch)?<h1>Vedios ka page with {category}</h1>:<h1>Home page</h1>}
 

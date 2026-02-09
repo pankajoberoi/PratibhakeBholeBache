@@ -1,3 +1,4 @@
+import Discord from "./Component/Discord"
 import Youtube from "./Component/Youtube"
 
 function App() {
@@ -5,7 +6,8 @@ function App() {
 
   return (
     <>
-      <Youtube/>  
+      {/* <Youtube/>   */}
+      <Discord/>
     
     </> 
   )
