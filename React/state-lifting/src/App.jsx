@@ -6,11 +6,12 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import UserForm from "./Components/UserForm";
 import SearchApp from "./Components/SearchApp";
+import { useState } from "react";
 
 function App() {
   
   // const [qty,setQty]=useState(5)
-  // const [save,setSave]=useState(false)
+  const [save,setSave]=useState(false)
 
   return (
     <>
@@ -21,13 +22,13 @@ function App() {
        
       
 
-      {/* <UserForm save={save} setSave={setSave}/>
+      <UserForm save={save} setSave={setSave}/>
 
       <ToastComp save={save} setSave={setSave}/>
 
-      <ToastContainer /> */}
+      <ToastContainer />
 
-        <SearchApp/>
+        {/* <SearchApp/> */}
       
 
 
