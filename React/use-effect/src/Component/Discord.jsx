@@ -24,7 +24,9 @@ const Discord = () => {
         <button onClick={()=> setShow(!show)}>{show?'Close Chat':'Open Chat'}</button>
 
 
-        {show && <ChatRoom roomId={roomId}/>}
+        {(show)?<ChatRoom roomId={roomId}/>:""}
+
+       {/* H/W State Lifting */}
 
     </div>
   )
