@@ -10,6 +10,7 @@ const Login = ({setUser}) => {
     const navigate=useNavigate()
 
     function handleChange(e){
+        console.log(e);
         setForm({...form,[e.target.name]:e.target.value})
     }
 
