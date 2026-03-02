@@ -4,7 +4,7 @@ const MySchema = new Schema({
   name: {
     type: String,
     required: true,
-    maxlength: 50,
+    maxlength: 5,
   },
   role: {
     type: String,
@@ -19,6 +19,6 @@ const MySchema = new Schema({
   },
 });
 
-const TaskModel = model("PratibhaUsers", MySchema);
+const TaskModel = model("DemoUsers", MySchema);
 
 module.exports = TaskModel;
